@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="twitter.css">
+    <script src="https://use.fontawesome.com/c9a81798f6.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="twitter">
+            <div class="twitter-logo"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <div class="twitter-name">
+                <a href="#"><h1>Twitter</h1></a>
+            </div>
+        </div>
+        <div class="new-tweet">
+            <div class="add-tweet">
+                <a href="#"><img src="no-person.jpg" alt="person image"></a>
+                <textarea name="tweet" id="add-tweet" cols="30" rows="10" placeholder="Write your tweet here!"></textarea>
+            </div>
+            <div class="submit-new-tweet">
+                <button id="post-button" onclick="AddToNewsfeed()"><i class="fa fa-paper-plane"></i> Post</button>
+            </div>
+        </div>
+        <hr>
+        <div class="newsfeed" id="newsfeed">
+            <div class="no-posts" id="no-posts">
+                <span>welcome to your new Account</span><br>
+                there is no posts yet !<br>
+                Write your first tweet <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <div class="newsfeed-text" id="newsfeed-text">
+                newsfeed
+            </div>
+            <hr id="first-line" class="line">
+        </div>
+    </div>
+    <div class="main-container" id="main-container">
+        <div class="content">
+            <div class="sgin-in">
+                <h1>Sgin in</h1>
+                <h4>You Have To Create An Account To <strong>TWEET</strong></h4>
+            </div>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="input-name" placeholder="e.g. 'Mohammed'" autocomplete="off" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="e.g. 'moh@gmail.com'" autocomplete="off" required>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="input-username" placeholder="e.g. '@mohmmed_su'" autocomplete="off" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="input-password" placeholder="e.g. '**********'" autocomplete="off" required>
+            </form>
+            <div class="buttons">
+                <button type="submit" id="sgin-in-button" onclick="sgin()">Sgin In</button>
+            </div>
+        </div>
+    </div>
+<script src="twitter.js"></script>
+</body>
+</html>

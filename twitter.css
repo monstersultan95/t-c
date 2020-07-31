@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+button:focus{
+    outline: none;
+}
+body{
+    background-color: rgb(37, 175, 209);
+    max-width: 100vw;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+    background-color:white;
+}
+.twitter{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(37, 175, 209);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
+    border-bottom: none;
+}
+.twitter-logo a i{
+    font-size: 50px;
+    color: white;
+}
+.twitter-name a{
+    text-decoration: none;
+}
+.twitter-name h1{
+    color: white;
+    padding-left: 20px;
+} 
+.tweet{
+    background-color: white;
+    width: 90%;
+    margin: 0px auto 0px;
+    height: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1112;
+    display: none;
+}
+.user-info{
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.user-img{
+    float: left;
+}
+.user-img a img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 5px;
+    border: 1px black solid;
+}
+.user-name{
+    float: right;
+    padding-left: 15px;
+    height: 50px;
+}
+.user-name h1{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.user-name h3{
+    font-size: 13px;
+}
+.tweet-content{
+    padding: 10px 10px 10px 20px;
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+.tweet-buttons{
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.tweet-buttons #like-button{
+    height: 30px;
+    background-color: transparent;
+    color: black;
+    border: 1px white solid;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.tweet-buttons #like-button #filled-like{
+    display: none;
+}
+.tweet-buttons #retweet-button{
+    height: 30px;
+    background-color: transparent;
+    color: black;
+    border: 1px white solid;
+    border-radius: 15px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.main-container{
+    position: absolute;
+    top: -30px;
+    left: 10vw;
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+    margin-top: 30px;
+    background-color:rgb(37, 175, 209);
+    display: flex;
+    z-index: 114334;
+
+    
+}
+.content{
+    max-width: 400px;
+    width: 400px;
+    height: 70%;
+    margin: auto;
+    border: 2px white double;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sgin-in{
+    padding: 20px 0px;
+    width: 100%;
+    height: 25%;
+}
+.sgin-in h1, .sgin-in h4{
+    color: white;
+    text-align: center;
+}
+.sgin-in h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+form{
+    width: 100%;
+    height: 65%;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+form input{
+    background-color: rgba(255, 255, 255, 0.719);
+    outline: none;
+    border: none;
+    border-bottom: 1px double white;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+form input:hover{
+    background-color: white;
+}
+form ::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+}
+.buttons{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.buttons button{
+    background-color: rgba(255, 255, 255, 0.719);
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+.buttons button:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+.buttons button:focus {
+    outline: none;
+}
+.new-tweet{
+    border: 3px black double ;
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px auto 0px;
+}
+.add-tweet{
+    width: calc(100% - 40px);
+    height: 120px; 
+    padding-left: 20px;
+    display: flex;
+}
+.add-tweet img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 25px;
+    margin-right: 15px;
+    border: 1px black solid;
+}
+.add-tweet #add-tweet{
+    flex-basis: 90%;
+    height: 100px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px black solid;
+    overflow-wrap: normal;
+    word-break: keep-all;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+.submit-new-tweet{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.submit-new-tweet button{
+    margin-right: 20px;
+    background-color: rgb(37, 175, 209);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 70px;
+    cursor: pointer;
+    color: white;
+}
+#add-tweet:focus{
+    outline: none;
+}
+.submit-new-tweet button i{
+    padding-right: 3px;
+}
+.container hr{
+    width: 90%;
+    margin: 20px auto 0px;
+}
+#line, .line{
+    width: 90%;
+    margin: 5px auto 5px;
+    height: 3px;
+    background-color: rgb(37, 175, 209);
+}
+#first-line{
+    display: none;
+}
+.newsfeed{
+    width: 100%;
+    min-height: 345px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+.newsfeed-text{
+    text-transform: uppercase;
+    width: 90%;
+    margin: 15px auto 10px;
+    align-self: flex-start;
+    height: 30px;
+    background-color: rgb(37, 175, 209);
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+}
+.newsfeed .no-posts{
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+.newsfeed .no-posts span{
+    font-weight: 900;
+
+}
+.newsfeed .no-posts i{
+    font-size: 30px;
+}
