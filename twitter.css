@@ -123,8 +123,6 @@ body{
     background-color:rgb(37, 175, 209);
     display: flex;
     z-index: 114334;
-
-    
 }
 .content{
     max-width: 400px;
